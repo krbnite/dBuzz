@@ -171,4 +171,14 @@ F'n beautiful! :-) :-p
 Ultimatley, in a python script, I have to learn the direct rpy2 way of doing these things.
 I'll save that for another day.
 
+### Next Day
+Uh, actually --- yes, you can, believe it or not.  Obviously the script needs
+to be run w/ an ipython interpreter and the right dependencies, but it's possible.
+
+```python
+def argh(qstr):
+    %R -i qstr -o output output=dbGetQuery(con,qstr)
+    return output
+argh("select * from busgrp.krbn_test")
+```
 
