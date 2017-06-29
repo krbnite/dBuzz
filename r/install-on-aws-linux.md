@@ -9,7 +9,9 @@ https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/
 sudo R
 ```
 ```R
-install.packages(c("dplyr","tidyr","RPostgreSQL"))
+# I'm doing a "light installation" here, which basically means
+#   install anything Hadley
+install.packages(c("dplyr","tidyr","stringr","ggplot2","lubridate","RPostgreSQL"))
 ```
 
 RPostgreSQL download failed...
@@ -25,4 +27,7 @@ sudo apt-get install libpq-dev
 ```
 
 Oh yay!  It worked: this allowed me to successfully install RPostgreSQL.
+
+Important:  If you have a .RProfile that loads custom functions, libraries, etc, which
+you are used to having, then make sure to sftp-put it in your AWS linux home directory.
 
