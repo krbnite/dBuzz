@@ -113,6 +113,9 @@ See the same tutorial if you want to install MPI...
 brew install openmpi --build-from-source --cc=gcc-6
 ```
 
+### Getting started w/ xgboost in Python
+This is a nice tutorial:  http://machinelearningmastery.com/xgboost-python-mini-course/
+
 
 
 
