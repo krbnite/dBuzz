@@ -182,3 +182,17 @@ def argh(qstr):
 argh("select * from busgrp.krbn_test")
 ```
 
+
+### Update (2017-07-30)
+Note that rpy2.interactive can get complicated using various package managers...  
+For example, if you have brew-installed R and Anaconda/Conda, things might work.  However, if
+you have to re-install R, things can break...  This is because Conda-managed things do not
+necessarily respect HomeBrew-managed things.  If you conda-install rpy2, note that you 
+will likely be using a different version of R than the one you normally use on your system.
+This means that the R libraries you have previously installed will not be accessible until
+you reinstall them in your Conda-R environment...
+
+This last solution is fine.  If you really want to have "one true R", then there is likely
+some backflipping you can do w/ path variables, etc.
+
+
