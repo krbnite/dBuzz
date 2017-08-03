@@ -1,6 +1,11 @@
 # dBuzz
 Debuzzing the buzz!
 
+## Reading List
+* 2015: Bradley & Kantz: [Nonlinear Time Series Analysis Revisited](http://aip.scitation.org/doi/10.1063/1.4917289?Track=CHAMC0717&utm_source=AIP+Publishing&utm_medium=email&utm_campaign=8504241_Chaos+Most+Cited+July+2017&dm_i=1XPS%2C529WX%2CC9RNQM%2CJD72R%2C1&)
+  - added 2017-08-03
+
+
 
 ## NLP-Oriented AI/ML/DS Jobs
 * Natural Language Understanding
