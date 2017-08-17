@@ -25,13 +25,22 @@ def timestamp(y0=2005,yf=2017):
   sec = rc(range(0,60))
   ts = datetime(year,month,dom,hour,min,sec)
   return ts
+  
+def user(n_users=337):
+  return rc(range(n_users))
 
 def device():
   return rc(['PC','PC','mobile', 'mobile','mobile','TV','TV','TV','TV','TV'])
   
 tbl = pd.DataFrame(
-  [[i, timestamp(), device()] for i in range(10000)],
+  [[user(), timestamp(), device()] for i in range(10000)],
   columns=['userid', 'timestamp', 'device'])
 
 tbl.to_sql('krbn_fb1', con=con, schema='krbn', index=False)  # might need to set a smaller chunksize!
+
+# Python/Pandas Way
+tbl['wkdy'] = [ts.weekday() for ts in tbl.timestamp]
+tbl[tbl.device=='mobile']
 ```
+
+https://pandas.pydata.org/pandas-docs/stable/groupby.html
