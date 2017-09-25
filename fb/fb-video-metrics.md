@@ -83,6 +83,12 @@ value = [item['values'][0]['value'] for item in info['data']]
 # Flatten the JSONese
 for feature in features:
   .........
+  
+# Write to File
+import json
+with open('my_json_file.json', 'w') as f:
+  json.dump(info, f)
+
 ```
 
 
