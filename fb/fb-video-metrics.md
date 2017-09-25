@@ -73,7 +73,16 @@ Python FaceBook Package
 # This package only seems to support up to version 2.7 (currently on v2.10)
 graph = facebook.GraphAPI(access_token="your_token", version="2.7")
 # But! It does retrieve the data I need
-graph.get_object("/10155166528086443/video_insights")
+info = graph.get_object("/10155166528086443/video_insights")
+features = [item['name'] for item in info['data']]
+title = [item['title'] for item in info['data']]
+description = [item['description'] for item in info['data']]
+id = [item['id'] for item in info['data']]
+value = [item['values'][0]['value'] for item in info['data']]
+
+# Flatten the JSONese
+for feature in features:
+  .........
 ```
 
 
