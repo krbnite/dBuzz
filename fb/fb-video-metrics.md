@@ -91,4 +91,10 @@ with open('my_json_file.json', 'w') as f:
 
 ```
 
+------------------------------------------
+
+How to generate long-lived access tokens:
+
+https://developers.facebook.com/docs/facebook-login/access-tokens/expiration-and-extension
+
 
