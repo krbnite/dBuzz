@@ -1,3 +1,9 @@
+Some things to check out:
+* http://www.learncpp.com/
+
+
+------------------------------------
+
 
 
 So you want to learn C?  Me too.  That's why I'm writing this.
